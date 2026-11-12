@@ -10,4 +10,3 @@ data class Siswa(
     val alamat: String,
     val telepon: String
 )
-)
