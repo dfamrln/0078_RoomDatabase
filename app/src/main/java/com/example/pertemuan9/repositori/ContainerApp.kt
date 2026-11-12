@@ -1,15 +1,12 @@
 package com.example.pertemuan9.repositori
 
-import com.example.pertemuan9.room.Siswa
-import com.example.pertemuan9.room.SiswaDao
-import kotlinx.coroutines.flow.Flow
+interface ContainerApp {
+    val repositoriSiswa : RepositoriSiswa
 
-interface RepositoriSiswa {
-    fun getAllSiswaStream(): Flow<List<Siswa>>
-    suspend fun insertSiswa(siswa: Siswa)
 }
 
-class OfflineRepositoriSiswa(private val siswaDao: SiswaDao) : RepositoriSiswa {
-    override fun getAllSiswaStream(): Flow<List<Siswa>> = siswaDao.getAllSiswa()
-    override suspend fun insertSiswa(siswa: Siswa) = siswaDao.insert(siswa)
+class ContainerDataApp(private val context: Context): ContainerApp{
+    override val repositoriSiswa: RepositoriSiswa by lazy {
+        OfflineRepositoriSiswa(DatabaseSiswa.getDatabase(context).siswaDao())
+    }
 }
