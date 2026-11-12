@@ -1,5 +1,8 @@
 package com.example.pertemuan9.room
 
+
+@Database(entities = [Siswa::class], version = 1, exportSchema = false)
+
 object DatabaseSiswa: RoomDatabase() {
     abstract fun siswaDao(): SiswaDao
 
