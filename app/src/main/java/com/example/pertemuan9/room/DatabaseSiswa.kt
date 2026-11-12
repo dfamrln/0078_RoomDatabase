@@ -1,4 +1,5 @@
 package com.example.pertemuan9.room
 
-object DatabaseSiswa {
+object DatabaseSiswa: RoomDatabase() {
+    abstract fun siswaDao(): SiswaDao
 }
