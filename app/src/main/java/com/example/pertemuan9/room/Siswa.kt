@@ -1,6 +1,7 @@
 package com.example.pertemuan9.room
 
-import...
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "tblSiswa")
 data class Siswa(
@@ -8,5 +9,5 @@ data class Siswa(
     val id: Int = 0,
     val nama: String,
     val alamat: String,
-    val telepon: String
+    val telpon: String
 )
