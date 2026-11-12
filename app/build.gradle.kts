@@ -1,19 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
+
 }
 
 android {
-    namespace = "com.example.pertemuan9"
-    compileSdk {
-        version = release(37)
-    }
+    namespace = "com.example.myapplication"
+    compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.pertemuan9"
-        minSdk = 36
+        applicationId = "com.example.myapplication"
+        minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -41,6 +39,18 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
+
+    //icons
+    implementation(libs.compose.icons)
+    // room
+    implementation(libs.bundles.room)
+    ksp(libs.room.compiler)
+    //ViewModel
+    implementation(libs.lifecycle.viewmodel.compose)
+    implementation(libs.lifecycle.runtime.compose)
+    //navigasi
+    implementation(libs.navigation.compose)
+
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
@@ -53,17 +63,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-
-    //Room
-    implementation(libs.bundels.room)
-    ksp(libs.room.compiler)
-
-    //icons
-    implementation(libs.compose.icons)
-
-    //ViewModel
-    implementation(libs.lifecycle.viewmodel.compose)
-    implementation(libs.lifecycle.runtime.compose)
-    //Navigasi
-    implementation(libs.navigartion.compose)
 }
