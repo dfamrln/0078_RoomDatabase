@@ -29,10 +29,18 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 androidx-room-compiler = { group = "androidx.room", name = "compiler", version.ref = "room" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
-android-navigartion-compose = {module = "androidx.navigation", name = "navigation-compose", version.ref = "navver" }
+android-navigartion-compose = {module = "androidx.navigation:navigation-compose", version = "2.9.6" }
+android-compose-icons = { module = "androidx.compose.material:material-icons-extended" }
+android-room-runtime = { module = "androidx.room:room-runtime".version.ref = "room" }
+android-room-ktx = { module = "androidx.room:room-ktx".version.ref = "room" }
+android-room-compiler = { module = "androidx.room:room-compiler".version.ref = "room" }
+android-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version = "2.10.0" }
+android-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version = "2.10.0" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 ksp = {id = "com.google.devtools.ksp", version.ref = "kspver"}
 
