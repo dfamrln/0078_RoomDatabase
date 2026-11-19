@@ -1,4 +1,22 @@
-<img width="431" height="952" alt="Screenshot 2026-11-12 175007" src="https://github.com/user-attachments/assets/a46f0d05-103f-4562-829d-f782d85cab49" /> <img width="430" height="952" alt="Screenshot 2026-11-12 175115" src="https://github.com/user-attachments/assets/9d0210e1-461e-454c-aaf3-88c6eae70591" /> <img width="431" height="948" alt="Screenshot 2026-11-12 175057" src="https://github.com/user-attachments/assets/8a8b7304-1344-4c00-bf5b-213326a9a527" />
 
+<h2 align="center">Dokumentasi Aplikasi</h2>
 
-<img width="187" height="413" alt="image" src="https://github.com/user-attachments/assets/4c9ee905-7fe1-4e42-9c6c-1d323edb19fd" />
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <b>1. Halaman Utama</b><br><br>
+      <img src="https://github.com/user-attachments/assets/a46f0d05-103f-4562-829d-f782d85cab49" width="180"><br>
+      <sub>Halaman awal sebelum data siswa ditambahkan.</sub>
+    </td>
+    <td align="center" width="33%">
+      <b>2. Form Pengisian</b><br><br>
+      <img src="https://github.com/user-attachments/assets/9d0210e1-461e-454c-aaf3-88c6eae70591" width="180"><br>
+      <sub>Form untuk memasukkan informasi siswa.</sub>
+    </td>
+    <td align="center" width="33%">
+      <b>3. Data Siswa</b><br><br>
+      <img src="https://github.com/user-attachments/assets/8a8b7304-1344-4c00-bf5b-213326a9a527" width="180"><br>
+      <sub>Menampilkan informasi siswa yang tersimpan.</sub>
+    </td>
+  </tr>
+</table>
