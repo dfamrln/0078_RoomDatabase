@@ -1,6 +1,7 @@
 package com.example.pertemuan9.view.route
 
 import com.example.pertemuan9.R
+import com.example.pertemuan9.uicontroller.DestinasiNavigasi
 
 object DestinasiEditSiswa : DestinasiNavigasi {
     override val route = "item_edit"
